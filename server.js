@@ -1,5 +1,6 @@
 const express = require('express');
 const loadConfig = require('./config');
+const router = require('./routes');
 
 // Création du web server
 const app = express();
@@ -8,7 +9,7 @@ const app = express();
 const {mode, port} = loadConfig();
 
 // Chargement des routes
-// TODO
+app.use(router);
 
 // Demarrage du server
 app.listen(port, () => {

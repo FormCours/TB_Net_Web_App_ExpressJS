@@ -12,6 +12,13 @@ const {mode, port} = loadConfig();
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
+// Ajout d'un middleware pour les fichiers static (css, image, ...)
+app.use(express.static('content'));
+
+// Ajout du middleware pour gérer les données d'un formulaire
+// -> "application/x-www-form-urlencoded" (Pas utile pour une API)
+app.use(express.urlencoded({extended: false})) 
+
 // Chargement des routes
 app.use(router);
 

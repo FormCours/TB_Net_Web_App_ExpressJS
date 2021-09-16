@@ -5,4 +5,4 @@ const router = express.Router();
 require('./homeRouter')(router);
 
 
-export default router;
+module.exports = router;

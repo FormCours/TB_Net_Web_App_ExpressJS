@@ -1,10 +1,8 @@
-
-
-export default {
+module.exports = {
 
     index: (req, res) => {
         res.sendStatus(501);
-        
+
     },
 
     about: (req, res) => {

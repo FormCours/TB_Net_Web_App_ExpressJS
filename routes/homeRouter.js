@@ -1,10 +1,11 @@
-import homeController from "../controllers/homeController"
+const homeController = require("../controllers/homeController");
 
-export default (router) => {
+
+module.exports = (router) => {
 
     router.get('/home', homeController.index)
     router.get('/about', homeController.about)
     router.get('/contact', homeController.contact)
     router.post('/contact', homeController.contactPost)
-    
+
 }

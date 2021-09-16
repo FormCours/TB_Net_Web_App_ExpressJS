@@ -1,0 +1,14 @@
+{
+    "developpement": {
+        "mode": "dev",
+        "port": 8080
+    },
+    "production": {
+        "mode": "prod",
+        "port": 5555
+    },
+    "local": {
+        "mode": "local",
+        "port": 4444
+    }
+}
